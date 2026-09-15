@@ -5,6 +5,7 @@
 [![uv](https://img.shields.io/badge/uv-package%20manager-4051b5.svg)](https://docs.astral.sh/uv/)
 [![Ray](https://img.shields.io/badge/Ray-028CF0?style=flat&logo=ray&logoColor=white)](https://docs.ray.io/en/latest/)
 [![SkyPilot](https://img.shields.io/badge/SkyPilot-372F8A?style=flat)](https://docs.skypilot.co/en/stable/)
+[![Google Slides](https://img.shields.io/badge/Google%20Slides-F9AB00?style=flat&logo=googleslides&logoColor=white)](https://docs.google.com/presentation/d/1tzN2_py9s8TgpNwpzJJIJv7RH_rVNrS_Z5TqX38mThQ/edit?usp=sharing)
 
 # cloudclinic-ray
 
@@ -30,6 +31,9 @@ Both demos can be run locally or on cloud clusters provisioned via
 > [CloudBank Cloud Clinic](https://www.youtube.com/watch?v=S1Zm7JX6qEk), its
 > [slides](https://bit.ly/4bWeE7b), and the corresponding
 > [demo project](https://github.com/uw-escience-cloudbank/skypilot-demo) for a quick introduction.
+
+> [!TIP]
+> This repository has accompanying [Google slides](https://docs.google.com/presentation/d/1tzN2_py9s8TgpNwpzJJIJv7RH_rVNrS_Z5TqX38mThQ/edit?usp=sharing).
 
 ## Quickstart
 

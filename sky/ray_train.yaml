@@ -1,0 +1,29 @@
+resources:
+  infra: aws/us-east-1
+  accelerators: T4:1
+  disk_size: 50
+  disk_tier: medium
+  autostop:
+    idle_minutes: 5
+    down: true
+
+num_nodes: 2
+
+workdir: .
+
+envs:
+  RAY_ADDRESS: "127.0.0.1:6379"
+
+setup: |
+  set -euo pipefail
+  uv sync --frozen --no-dev --extra train
+  .venv/bin/python -c "import torch; assert torch.cuda.is_available(), 'CUDA unavailable'"
+
+run: |
+  set -euo pipefail
+  source .venv/bin/activate
+  ~/sky_templates/ray/stop_cluster || true
+  ~/sky_templates/ray/start_cluster
+  if [ "$SKYPILOT_NODE_RANK" == "0" ]; then
+    train-demo --gpu --n-workers "$((SKYPILOT_NUM_NODES * SKYPILOT_NUM_GPUS_PER_NODE))"
+  fi

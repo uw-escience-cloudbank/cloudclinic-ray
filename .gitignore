@@ -1,0 +1,17 @@
+# Environment
+.venv/
+.pypirc
+.env*
+!.env.example
+
+# Python
+__pycache__/
+*.py[codz]
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# IDE
+.idea/
+.DS_Store

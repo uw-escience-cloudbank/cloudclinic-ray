@@ -6,7 +6,7 @@
 [![Ray](https://img.shields.io/badge/Ray-028CF0?style=flat&logo=ray&logoColor=white)](https://docs.ray.io/en/latest/)
 [![SkyPilot](https://img.shields.io/badge/SkyPilot-372F8A?style=flat)](https://docs.skypilot.co/en/stable/)
 
-# ray-cloudclinic
+# cloudclinic-ray
 
 </div>
 
